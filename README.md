@@ -1,5 +1,7 @@
 # Algorithms and Data Structure in Javascript
 
-```js
-nodemon main.js
+At this point there is no node_modules. Just: 
+
+```
+npm start
 ```
