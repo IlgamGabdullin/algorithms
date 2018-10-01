@@ -30,3 +30,28 @@ export const anagramByCounting = (str1, str2) => {
 
   return isOk;
 }
+
+//
+// another method by counting (with one object)
+//
+const anagram = (str1, str2) => {
+  if (str1.length !== str2.length) { return false; }
+
+  const characters = {};
+
+  for (let i = 0; i < str1.length; i++) {
+    const current = characters[str1[i]];
+
+    characters[str1[i]] = current ? current + 1 : 1;
+  }
+
+  for (let i = 0; i < str2.length; i++) {
+    const current = characters[str2[i]];
+
+    if (!current) { return false; }
+
+    characters[str2[i]] = current - 1;
+  }
+
+  return true;
+}
