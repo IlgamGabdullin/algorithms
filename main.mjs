@@ -1,4 +1,4 @@
 import { execute } from './execute';
-import { infixToPostfix } from './data-structures/stack';
+import { maxSubArraySum } from './patterns/sliding-window';
 
-console.log(infixToPostfix('4 * 3 - 2'));
+console.log(maxSubArraySum([3, 2, 4, 1 ,5 ,2, 6, 3, 5, 2 ,4], 4));
