@@ -1,4 +1,7 @@
 import { execute } from './execute';
-import { maxSubArraySum } from './patterns/sliding-window';
+import { linearSearch } from './algorithms';
 
-console.log(maxSubArraySum([3, 2, 4, 1 ,5 ,2, 6, 3, 5, 2 ,4], 4));
+const array = [312, 32, 4, 345, 14, 798, 43, 934, 42, 61, 7232];
+const num = 4;
+
+console.log(linearSearch(array, num));

@@ -1,3 +1,3 @@
-export * from './anagramByCount';
-export * from './anagramByMark';
+export * from './anagramByCounting';
+export * from './anagramByMarks';
 export * from './anagramBySorting';
