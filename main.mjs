@@ -1,7 +1,6 @@
 import { execute } from './execute';
-import { linearSearch } from './algorithms';
+import { binarySearch } from './algorithms';
 
-const array = [312, 32, 4, 345, 14, 798, 43, 934, 42, 61, 7232];
-const num = 4;
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 23, 24];
 
-console.log(linearSearch(array, num));
+console.log(binarySearch(array, 24));
