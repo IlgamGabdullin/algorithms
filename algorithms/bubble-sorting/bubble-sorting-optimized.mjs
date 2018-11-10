@@ -1,4 +1,4 @@
-import { swap } from './bubble-sorting';
+import { exchange } from '../utils';
 
 export const bubbleSortOpt = (arr) => {
   let noSwaps;
@@ -7,7 +7,7 @@ export const bubbleSortOpt = (arr) => {
     noSwaps = true;
     for (let j = 0; j < i - 1; j++) {
       if (arr[j] > arr[j+1]) {
-        swap(arr, j, j+1);
+        exchange(arr, j, j+1);
         noSwaps = false;
       }
     }

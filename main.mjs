@@ -1,4 +1,4 @@
 import { execute } from './execute';
-import { bubbleSortOpt } from './algorithms';
+import { selectionSort } from './algorithms';
 
-console.log(bubbleSortOpt([4, 3, 5, 6, 2, 9, 8, 5, 6]));
+console.log(selectionSort([4, 34, 32, 89, 3, 5, 6, 2, 9, 8, 5, 6]));
