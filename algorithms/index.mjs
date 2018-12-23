@@ -5,3 +5,4 @@ export * from './bubble-sorting';
 export * from './selection-sorting';
 export * from './insertion-sorting';
 export * from './merge-sorting';
+export * from './quick-sorting';
