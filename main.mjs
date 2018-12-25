@@ -1,4 +1,4 @@
 import { execute } from './execute';
-import { quickSorting } from './algorithms';
+import { radixSorting } from './algorithms';
 
-console.log(quickSorting([32, 34, 12, 54, 28]));
+console.log(radixSorting([32, 12, 5434, 54, 342, 23453]))
