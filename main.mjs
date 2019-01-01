@@ -1,4 +1,17 @@
 import { execute } from './execute';
 import { radixSorting } from './algorithms';
+import { SinglyLinkedList } from './data-structures';
 
-console.log(radixSorting([32, 12, 5434, 54, 342, 23453]))
+let linkedList = new SinglyLinkedList();
+
+linkedList.push('hi');
+linkedList.push('there');
+linkedList.push('you');
+linkedList.push('!');
+
+// console.log(linkedList);
+console.log('last one: ', linkedList.pop());
+console.log('last one: ', linkedList.pop());
+console.log('last one: ', linkedList.pop());
+console.log('last one: ', linkedList.pop());
+console.log('last one: ', linkedList.pop());
