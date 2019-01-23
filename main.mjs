@@ -1,12 +1,10 @@
 import { execute } from './execute';
-import { radixSorting } from './algorithms';
-import { SinglyLinkedList } from './data-structures';
+import { DoublyLinkedList } from './data-structures';
 
-let linkedList = new SinglyLinkedList();
 
-linkedList.push('hi');
-linkedList.push('there');
-linkedList.push('you');
-linkedList.push('!');
+const list = new DoublyLinkedList();
 
-linkedList.reverse();
+list.push('val');
+list.push(true);
+
+console.log(list.pop());
