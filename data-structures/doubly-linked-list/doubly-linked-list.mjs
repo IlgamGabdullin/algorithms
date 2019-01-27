@@ -83,4 +83,29 @@ export class DoublyLinkedList {
     this.length++;
     return this
   }
+
+  get(position) {
+    if (position >= this.length || position < 0) { return; }
+
+    let node;
+    if (position <= this.length / 2) {
+      let idx = 0;
+      node = this.head;
+      while(idx !== position) {
+        node = node.next;
+        idx++;
+      }
+    }
+
+    if (position > this.length /2) {
+      let idx = this.length - 1;
+      node = this.tail;
+      while (idx !== position) {
+        node = node.prev;
+        idx--;
+      }
+    }
+
+    return node;
+  }
 }
