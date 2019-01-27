@@ -108,4 +108,54 @@ export class DoublyLinkedList {
 
     return node;
   }
+
+  set(idx, value) {
+    const node = this.get(idx);
+    if (!node) { return; }
+
+    node.val = value;
+    return true;
+  }
+
+  insert(idx, value) {
+    if (idx < 0 || idx > this.length) { return; }
+    if (idx === 0) { return !!this.unshift(value); }
+    if (idx === this.length) { return !!this.push(value); }
+    
+    const node = Node.create(value);
+    const currentNode = this.get(idx);
+    const prevNode = currentNode.prev;
+    node.next = currentNode;
+    node.prev = prevNode;
+    prevNode.next = node;
+    currentNode.prev = node;
+    this.length++;
+
+    return true;
+  }
+
+  remove(idx) {
+    if (idx < 0 || idx >= this.length) { return; }
+    if (idx === 0) { return this.shift(); }
+    if (idx === this.length - 1) { return this.pop(); }
+
+    const node = this.get(idx);
+    node.prev.next = node.next;
+    node.next.prev = node.prev;
+    node.next = null;
+    node.prev = null;
+    this.length--;
+
+    return node;
+  }
+
+  print() {
+    const asArray = [];
+    let current = this.head;
+    while(current) {
+      asArray.push(current.val)
+      current = current.next;
+    }
+    console.log(asArray);
+  }
 }

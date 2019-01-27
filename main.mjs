@@ -9,4 +9,12 @@ list.push(true);
 list.push(23);
 list.push('ypta');
 
-console.log(list.get(2));
+list.print();
+
+list.insert(2, 'third element');
+
+list.print();
+
+list.remove(3);
+
+list.print();
