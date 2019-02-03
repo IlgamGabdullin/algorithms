@@ -1,20 +1,17 @@
-import { execute } from './execute';
-import { DoublyLinkedList } from './data-structures';
+import { BinarySearchTree } from './data-structures/';
 
 
-const list = new DoublyLinkedList();
+const tree = new BinarySearchTree();
 
-list.push('val');
-list.push(true);
-list.push(23);
-list.push('ypta');
+console.log(tree);
 
-list.print();
+tree.insert(10);
 
-list.insert(2, 'third element');
+tree.insert(100);
+tree.insert(9)
+tree.insert(7)
+tree.insert(3)
 
-list.print();
+tree.insert(34)
 
-list.remove(3);
-
-list.print();
+tree.insert(8);
