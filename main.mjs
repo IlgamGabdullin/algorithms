@@ -15,3 +15,5 @@ tree.insert(3)
 tree.insert(34)
 
 tree.insert(8);
+
+console.log(tree.contains(3));

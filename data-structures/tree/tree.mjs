@@ -35,4 +35,19 @@ export class BinarySearchTree {
       }
     }
   }
+
+  contains(val) {
+    if (!this.root) { return false; }
+    let current = this.root;
+
+    while(current) {
+      if (val === current.value) {
+        return current;
+      }
+      
+      current = val > current.value ? current.right : current.left;
+    }
+
+    return false;
+  }
 }
