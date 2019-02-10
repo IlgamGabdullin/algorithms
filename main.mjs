@@ -3,8 +3,6 @@ import { BinarySearchTree } from './data-structures/';
 
 const tree = new BinarySearchTree();
 
-console.log(tree);
-
 tree.insert(10);
 
 tree.insert(100);
@@ -16,4 +14,7 @@ tree.insert(34)
 
 tree.insert(8);
 
-console.log(tree.contains(3));
+console.log(tree.bfs())
+console.log(tree.dfsPreOrder());
+console.log(tree.dfsPostOrder());
+console.log(tree.dfsInOrder());
