@@ -8,5 +8,8 @@
     "start": "nodemon --experimental-modules main.mjs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  }
 }
