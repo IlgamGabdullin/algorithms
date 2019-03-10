@@ -1,20 +1,22 @@
-import { BinarySearchTree } from './data-structures/';
+import { MaxBinaryHeap } from './data-structures/';
+
+let heap = new MaxBinaryHeap();
 
 
-const tree = new BinarySearchTree();
+heap.insert(41);
+heap.insert(39);
+heap.insert(33);
+heap.insert(18);
+heap.insert(27);
+heap.insert(12);
+heap.insert(55);
 
-tree.insert(10);
-
-tree.insert(100);
-tree.insert(9)
-tree.insert(7)
-tree.insert(3)
-
-tree.insert(34)
-
-tree.insert(8);
-
-console.log(tree.bfs())
-console.log(tree.dfsPreOrder());
-console.log(tree.dfsPostOrder());
-console.log(tree.dfsInOrder());
+console.log(heap.values);
+console.log(heap.extractMax());
+console.log(heap.extractMax());
+console.log(heap.extractMax());
+console.log(heap.extractMax());
+console.log(heap.extractMax());
+console.log(heap.extractMax());
+console.log(heap.extractMax());
+console.log(heap.values);
