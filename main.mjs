@@ -1,22 +1,16 @@
-import { MaxBinaryHeap } from './data-structures/';
+import { PriorityQueue } from './data-structures/';
 
-let heap = new MaxBinaryHeap();
+let queue = new PriorityQueue();
 
+console.log(queue);
 
-heap.insert(41);
-heap.insert(39);
-heap.insert(33);
-heap.insert(18);
-heap.insert(27);
-heap.insert(12);
-heap.insert(55);
+queue.enqueue('yo', 13);
+queue.enqueue('sup', 4);
+queue.enqueue('йца', 6);
+queue.enqueue('ыуа', 132);
+queue.enqueue('мфы', 43);
 
-console.log(heap.values);
-console.log(heap.extractMax());
-console.log(heap.extractMax());
-console.log(heap.extractMax());
-console.log(heap.extractMax());
-console.log(heap.extractMax());
-console.log(heap.extractMax());
-console.log(heap.extractMax());
-console.log(heap.values);
+console.log(queue);
+
+console.log(queue.dequeue())
+console.log(queue.dequeue())
