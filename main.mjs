@@ -1,16 +1,16 @@
-import { PriorityQueue } from './data-structures/';
+import { HashTable } from './data-structures/';
 
-let queue = new PriorityQueue();
+let ht = new HashTable();
 
-console.log(queue);
+ht.set('good', 'Good');
+ht.set('bad', 'Bad');
+ht.set('best', 'Best');
+ht.set('normal', 'Normal');
+ht.set('norm', 'Normal');
+ht.set('enough', 'Enough');
+ht.set('woman', 'are great');
 
-queue.enqueue('yo', 13);
-queue.enqueue('sup', 4);
-queue.enqueue('йца', 6);
-queue.enqueue('ыуа', 132);
-queue.enqueue('мфы', 43);
 
-console.log(queue);
-
-console.log(queue.dequeue())
-console.log(queue.dequeue())
+console.log(ht);
+console.log(ht.values());
+console.log(ht.keys());
