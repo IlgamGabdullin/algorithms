@@ -1,16 +1,16 @@
-import { HashTable } from './data-structures/';
+import { Graph } from './data-structures/';
 
-let ht = new HashTable();
+let graph = new Graph();
 
-ht.set('good', 'Good');
-ht.set('bad', 'Bad');
-ht.set('best', 'Best');
-ht.set('normal', 'Normal');
-ht.set('norm', 'Normal');
-ht.set('enough', 'Enough');
-ht.set('woman', 'are great');
+graph.addVertex('Tokyo');
+graph.addVertex('Japan');
+graph.addVertex('New Zeland');
 
+graph.addEdge('Tokyo', 'Japan');
+graph.addEdge('Tokyo', 'New Zeland');
+graph.addEdge('Japan', 'New Zeland');
 
-console.log(ht);
-console.log(ht.values());
-console.log(ht.keys());
+console.log(graph);
+graph.removeVertex('Tokyo');
+
+// console.log(graph);
